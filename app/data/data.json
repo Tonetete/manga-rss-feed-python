@@ -1,0 +1,12 @@
+[
+  {
+    "title": "One Piece",
+    "image": "https://mangaplus.shueisha.co.jp/drm/title/100020/title_thumbnail_portrait_list/10711.jpg?key=79918099df56270ef2ba0976e43664ac",
+    "description": "Manga feed for One Piece",
+    "url": "https://mangaplus.shueisha.co.jp/titles/100020",
+    "provider": "mangaplus",
+    "selector": "ChapterListItem-module_name_3h9dj",
+    "selector_img_article": "",
+    "currentChapter": "#1017"
+  }
+]
