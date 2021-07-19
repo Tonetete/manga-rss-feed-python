@@ -1,0 +1,13 @@
+app/rss/*
+app/logs/*
+app/dumps/*
+
+.vscode/
+.DS_Store
+
+bin/
+include/
+lib/
+
+*.cpython*
+pyvenv.cfg
