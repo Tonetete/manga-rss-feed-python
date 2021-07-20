@@ -28,11 +28,10 @@ class MangaPlusRSS(rss.RSS):
                 
                 current_element = next(elements_reversed)
             
-            data['currentChapter'] = chapters[0].split()[1]                    
-            data_file = open("data/data.json", "w")
-            json.dump(data, data_file)
-            data_file.close()
+            data['currentChapter'] = chapters[0].split()[1]
             
             chapters_reversed = list(reversed(chapters))
             for x in range(0, len(chapters_reversed)):
                 FeedGen.writeFeed(data['title'], chapters_reversed[x], data['url'])
+        
+        return data        
