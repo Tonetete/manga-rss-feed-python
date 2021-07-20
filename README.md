@@ -40,7 +40,11 @@ Also you need to introduce the name and email in **data/contributor.json** and t
 
 #### Running locally
 
-You only have to execute `python main.py` and once the execution is done you'll see the rss feeds under the **rss** folder, each one per entry in **data.json**. Also the project will create a dump file for every entry in order to so when the script executes again, it'll dump in memory the content of the **obj** file and rebuilds the **FeedGenerator object** with all the data comming from the last time execution it found new chapters. The reason is implemented this way is because **python-feed-gen** doesn't provide any method to build from an existing source in xml by the moment.
+Run the **pip** command to install the dependencies:
+
+`pip install --no-cache-dir -r requirements.txt`
+
+After that you only have to execute `python main.py` and once the execution is done you'll see the rss feeds under the **rss** folder, each one per entry in **data.json**. Also the project will create a dump file for every entry in order to so when the script executes again, it'll dump in memory the content of the **obj** file and rebuilds the **FeedGenerator object** with all the data comming from the last time execution it found new chapters. The reason is implemented this way is because **python-feed-gen** doesn't provide any method to build from an existing source in xml by the moment.
 
 #### Running with docker container
 
