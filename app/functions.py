@@ -36,7 +36,7 @@ def check_chapters_are_different(current_chapter, chapter):
     number_chapter = get_number(chapter)
     
     if len(number_chapter) > 0 and len(number_current_chapter) > 0 and number_chapter[0] != current_chapter[0]:
-        if int(number_current_chapter[0]) < int(number_chapter[0]):
+        if float(number_current_chapter[0]) < float(number_chapter[0]):
             return True
         else:
             return False

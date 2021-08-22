@@ -4,7 +4,6 @@ import sys
 # setting path
 sys.path.append('../parentdirectory')
 
-import json
 from functions import check_chapters_are_different, get_number
 from . import rss
 from feed import Feed
