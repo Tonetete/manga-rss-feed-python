@@ -1,3 +1,4 @@
+from distutils.dir_util import copy_tree
 import re
 import sys
 import logging
@@ -44,3 +45,13 @@ def check_chapters_are_different(current_chapter, chapter):
         return True
     else:
         return False
+ 
+def copy_rss_folder():
+    try:
+        rss_path = '/usr/src/app/rss'
+        desination_rss_path = '/usr/src/rss'
+
+        copy_tree(rss_path, desination_rss_path)
+
+    except Exception as e:
+        print('ERROR', e)  
