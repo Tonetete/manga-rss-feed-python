@@ -3,7 +3,7 @@ from driver_browser import DriverBrowser
 import traceback
 import json
 import logging
-from functions import setup_logger
+from functions import setup_logger, copy_rss_folder
 
 def main():
     logger_execution = setup_logger('log_execution', 'logs/logs_execution.log')
@@ -34,5 +34,6 @@ def main():
     finally:
         driver_browser.close()
         data_file.close()
+        copy_rss_folder()
         
 main()
